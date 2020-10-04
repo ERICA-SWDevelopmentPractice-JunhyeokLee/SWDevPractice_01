@@ -41,7 +41,11 @@ master branch에서 프로그램을 배포하기 전, 배포 전략에 대한 �
 
 ## Develop branch
 
-작성자 : 
+작성자 : 박종윤
+
+주요 기능을 개발하고 features branch에서 개발된 모든 feature들을 병합하고 관리하는 branch입니다.   
+상시로 버그를 수정한 커밋들이 추가되며 새로운 기능 추가 작업이 있는 경우 feature branch를 생성하여 작업합니다.   
+평소에는 develop branch를 기반으로 개발을 진행하게 됩니다.
 
 ## Features branch
 
