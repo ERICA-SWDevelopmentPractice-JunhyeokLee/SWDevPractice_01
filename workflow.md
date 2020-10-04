@@ -57,7 +57,8 @@ Feature Branch는 Deveplop에서 파생되어 추가적인 feature을 개발할 
 
 ## Hotfix branch
 
-작성자 : 
+작성자 : 최종인
+프로젝트에서 발생하는 **버그의 수정**이나 **취약점을 보완**, 또는  **성능 향상**을 위해 긴급하게 배포되는 패치가 필요할때 사용되는 branch이다. 
 
 ## Release branch
 
