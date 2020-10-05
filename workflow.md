@@ -23,6 +23,26 @@ Team 이준혁의 Github workflow 에 대한 설명을 하는 md파일입니다.
 
 * 따라서, pull request 시에 오류가 발생하게 된다면, **git remote add upstream "원본 repository 주소"** 명령어를 이용하여 원본 repository를 upstream으로 설정한 후, **git pull upstream master** 명령어를 사용해서 원본 repository의 변경사항을 fork한 repository로 가져온 후, 자신이 작업한 변경사항을 수기로 재입력, 재commit하여 pull request하거나 rebase를 진행하여 pull request 하면 됩니다.
 
+---------------------------------------------------------------------------
+3-1. 먼저 원본 repository를 upstream으로 설정하는 명령어는 다음과 같습니다.
+'''
+git remote add upstream https://github.com/ERICA-SWDevelopmentPractice-JunhyeokLee/SWDevPractice_01.git
+'''
+
+3-2. 원본 repository를 가리키는 upstream이 등록되었는지 확인하는 방법은 다음과 같습니다.
+'''
+git remote
+'''
+
+3-3. 자신의 작업물을 원본 repository로 pull request하기 전에, 원본과의 충돌을 막기 위해 원본의 변경내역을 자신이 fork한 repository로
+내려 받는 명령어는 다음과 같습니다.
+'''
+git pull upstream master
+'''
+이 명령어를 통해 자신이 작업한 내용이 새로 업데이트된 원본의 내용과 합쳐져 충돌 없이 pull request를 수행할 수 있습니다.
+---------------------------------------------------------------------------
+
+
 commit 충돌 시 rebase를 이용하여 충돌을 해결하는 방법 : <https://lhy.kr/git-workflow>
 
 pull request 하는 방법 : <https://engineering-skcc.github.io/github%20pages/github-pages-fork-1/>
