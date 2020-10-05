@@ -25,22 +25,41 @@ Team 이준혁의 Github workflow 에 대한 설명을 하는 md파일입니다.
 
 ---------------------------------------------------------------------------
 3-1. 먼저 원본 repository를 upstream으로 설정하는 명령어는 다음과 같습니다.
+
 '''
 git remote add upstream https://github.com/ERICA-SWDevelopmentPractice-JunhyeokLee/SWDevPractice_01.git
 '''
 
 3-2. 원본 repository를 가리키는 upstream이 등록되었는지 확인하는 방법은 다음과 같습니다.
+
 '''
 git remote
 '''
 
 3-3. 자신의 작업물을 원본 repository로 pull request하기 전에, 원본과의 충돌을 막기 위해 원본의 변경내역을 자신이 fork한 repository로
 내려 받는 명령어는 다음과 같습니다.
+
 '''
 git pull upstream master
 '''
+
 이 명령어를 통해 자신이 작업한 내용이 새로 업데이트된 원본의 내용과 합쳐져 충돌 없이 pull request를 수행할 수 있습니다.
+
+3-4. 자신의 작업물을 commit, push 할 때는 다음과 같은 명령어를 사용합니다.
+
+'''
+git commit -m "write 브랜치이름's information by 작성자이름"
+
+
+git push origin master
+'''
+
+**여기서 절대 git push upstream master 명령어를 작성해서는 안됩니다!!**
+
+
 ---------------------------------------------------------------------------
+
+4. master로 push가 끝나면 github사이트에 자신이 fork한 repository로 들어가서 pull request 버튼을 누르고 new pull request 버튼을 눌러원본 repository로 pull request 작업을 수행합니다.
 
 
 commit 충돌 시 rebase를 이용하여 충돌을 해결하는 방법 : <https://lhy.kr/git-workflow>
