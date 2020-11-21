@@ -4,6 +4,7 @@ jira 연동 test
 test222
 
 jira linking test - by bnbong
+pull request jira linking test - by bnbong
 
 Team 이준혁의 Github workflow 에 대한 설명을 하는 md파일입니다.
 
